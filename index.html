@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Jules' Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="navbar.css">
+        <link rel="stylesheet" href="fontstyle.css">
+        <link rel="stylesheet" href="introduction.css">
+        <link rel="stylesheet" href="logo.css">
+        <link rel="stylesheet" href="about.css">
+        <link rel="stylesheet" href="details.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="icon" href="pictures/smiley.png" type="image">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+     </head>
+    <body>
+        <nav>
+            <div class="navbar">
+                <div class="logo flex">
+                    <svg id="verified" height="35" width="35" preserveaspectratio="xMidYMid meet" viewBox="0 0 100 100" x="0" xmlns="http://www.w3.org/2000/svg" y="0">
+                        <path d="M50,87.4c20.655,0,37.4-16.745,37.4-37.4S70.655,12.6,50,12.6,12.6,29.345,12.6,50h0c-.055,20.6,16.6,37.345,37.2,37.4,.067,0,.134,0,.2,0Zm17.3-43.4c1.85-1.821,1.874-4.796,.053-6.647l-.053-.053c-1.83-1.804-4.77-1.804-6.6,0l-15.4,15.4-6-6c-1.83-1.804-4.77-1.804-6.6,0-1.823,1.69-1.93,4.537-.241,6.359,.077,.083,.157,.163,.241,.241l9.3,9.4c1.83,1.804,4.77,1.804,6.6,0l18.7-18.7Z" fill-rule="evenodd"></path>
+                    </svg>
+                    <a  href="#">Jules</a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#introduction">Introduction</a></li>
+                    <li><a href="#details">Details</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                        <svg id="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="12" cy="12" r="5" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 1v2m0 18v2M4.2 4.2l1.4 1.4m12.8 12.8l1.4 1.4M1 12h2m18 0h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                        <svg id="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke="currentColor" stroke-width="2" fill="currentColor"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="dropdown">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div id="hamburger-button">
+                                    <svg viewBox="0 0 100 80" width="20" height="20">
+                                        <rect width="100" height="15"></rect>
+                                        <rect y="30" width="85" height="15"></rect>
+                                        <rect y="60" width="95" height="15"></rect>
+                                    </svg>
+                                </div>
+                            </a>
+                            <ul class="dropdown-options">
+                                <li><a href="#introduction">Introduction</a></li>
+                                <li><a href="#about">Details</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div id="introduction" class="flex">
+            <div id="introduction-details">
+                <span id="opening-tag">
+                    <span class="quaternary">&lt;</span class="glow"><span class="quaternary">&gt;</span>
+                </span>
+                <div class="sub-intro fw-regular white-grey">
+                    Hello, I'm
+                </div>
+                <div class="name fw-bold">
+                    Jules Leo Reserva
+                </div>
+
+                <div id="introduction-graphics" class="flex">
+                    <svg id="introduction-svg-rect" viewBox="0 0 400 5" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="5" />
+                    </svg>
+
+                    &nbsp;
+                    &nbsp;
+
+                    <!-- </> -->
+                    <!-- <span id="closing-tag">
+                        <span class="quaternary">&lt;</span class="glow"><span class="glow">/</span><span class="quaternary">&gt;</span>
+                    </span> -->
+                </div>
+
+                <div class="description fw-bold">
+                    A 3rd-year Computer Science <span class="quaternary">Student.</span>
+                </div>
+                <div class="description fw-bold">
+                    An <span class="quaternary">Amateur</span> Programmer.
+                </div>
+                <div class="description fw-bold">
+                    An Aspiring <span class="quaternary">Software Engineer.</span>
+                </div>
+
+                <br>
+
+                <div class="description fw-bold">
+                    Welcome to my <span class="quaternary">portfolio.</span>
+                </div>
+
+                <br>
+
+                <span id="closing-tag">
+                    <span class="quaternary">&lt;</span class="glow"><span class="glow">/</span><span class="quaternary">&gt;</span>
+                </span>
+            </div>
+
+            <div id="introduction-graphics-2" class="flex">
+                <svg width="500" height="500" viewBox="0 0 500 500">
+                    <circle cx="250" cy="250" r="250" fill="#282834" />
+                </svg>
+
+                <img src="./pictures/portrait vectorized.png" width="auto" height="650px" />
+            </div>
+        </div>
+
+        <div id="logo-container" class="flex">
+            <div id="logo-item-container" class="flex">
+                <div class="logo-item">
+                    <a href="https://losangelesgeneralcontractor.com/" class="flex" target="_blank">
+                        <img class="logo" src="./pictures/meta.png" width="auto" height="35px" />
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://www.github.com/jolsefu/" class="flex" target="_blank">
+                        <img class="logo" src="./pictures/github.png" width="auto" height="45px" />
+                    </a>
+                </div>
+                <div class="logo-item">
+                    <a href="https://losangelesgeneralcontractor.com/" class="flex" target="_blank">
+                        <img class="logo" src="./pictures/linkedin.png" width="auto" height="45px" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="details" class="flex">
+            <div id="details-1">
+                <div class="details-title fw-bold">
+                    Academic & Work <span class="quaternary">Experience.</span>
+                </div>
+
+                <div id="work-experience-container">
+                    <div class="details-container fw-semibold">
+                        <div>
+                            <span class="quaternary">Graduated</span> at Caraga State University
+                        </div>
+                        <div>
+                            Bachelor of Science In <span class="quaternary">Computer Science</span>
+                        </div>
+                        <div class="details-info-title fw-semibold white-grey">
+                            In the year 2026
+                        </div>
+                    </div>
+
+                    <div class="details-container fw-semibold">
+                        <span class="quaternary">Apple Inc.,</span> Intern
+                        <div class="details-info-title fw-semibold white-grey">
+                            Oct. 2026 to Jan. 2027 <span class="grey">(3 months)</span>
+                        </div>
+                    </div>
+
+                    <div class="details-container fw-semibold">
+                        <span class="quaternary">Meta Platforms, Inc.,</span> Intern
+                        <div class="details-info-title fw-semibold white-grey">
+                            Feb. 2027 to June 2027 <span class="grey">(4 Months)</span>
+                        </div>
+                    </div>
+
+                    <div class="details-container fw-semibold">
+                        <span class="quaternary">Google LLC,</span> Junior Software Engineer
+                        <div class="details-info-title fw-semibold white-grey">
+                            July 2027 to Aug. 2030 <span class="grey">(3 years)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="details-2">
+                <div class="details-title fw-bold">
+                    Extra <span class="quaternary">Skills.</span>
+                </div>
+
+                <div id="extra-skills-container">
+                    <div class="details-container fw-semibold">
+                        Harvard's <span class="quaternary">CS50x</span> Certificate
+                        <div class="details-info-title fw-semibold white-grey">
+                            November 2020
+                        </div>
+                    </div>
+
+                    <div class="details-container fw-semibold">
+                        Harvard's <span class="quaternary">CS50w</span> Certificate
+                        <div class="details-info-title fw-semibold white-grey">
+                            December 2023
+                        </div>
+                    </div>
+
+                    <div class="details-container fw-semibold">
+                        Django
+                        <div class="details-info-title fw-semibold white-grey">
+                            Web Backend
+                        </div>
+                    </div>
+
+                    <div class="details-container fw-semibold">
+                        ReactJS
+                        <div class="details-info-title fw-semibold white-grey">
+                            Web Frontend
+                        </div>
+                    </div>
+
+                    <div class="details-container fw-semibold">
+                        SQL
+                        <div class="details-info-title fw-semibold white-grey">
+                            Web Database
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about" class="flex">
+            <div id="about-details">
+                <div id="about-title" class="fw-bold">
+                    I Can Do Your
+
+                    <div>
+                        <span class="quaternary">Programming</span> Needs.
+                    </div>
+                </div>
+
+                <div class="fw-semibold about-description text-justify">
+                    I am passionate about continuous learning, and thrive in dynamic environments. My adaptability and eagerness to embrace new challenges make me an ideal candidate for projects that require a forward-thinking and results-driven programmer.
+                </div>
+
+                <div id="about-details-statistics" class="flex">
+                    <div class="fw-semibold quaternary about-description-statistics">
+                        5+
+
+                        <div class="fw-medium about-description-statistics-2">
+                            Projects Completed
+                        </div>
+                    </div>
+                    <div class="fw-semibold quaternary about-description-statistics">
+                        30+
+
+                        <div class="fw-medium about-description-statistics-2">
+                            Github Repositories
+                        </div>
+                    </div>
+                    <div class="break"></div>
+                    <div class="fw-semibold quaternary about-description-statistics">
+                        250+
+
+                        <div class="fw-medium about-description-statistics-2">
+                            Community Network
+                        </div>
+                    </div>
+                    <div class="fw-semibold quaternary about-description-statistics">
+                        2
+
+                        <div class="fw-medium about-description-statistics-2">
+                            CS Online Certificates
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="about-details-2" class="flex">
+                <div class="about-details-2-item flex">
+                    <div class="about-details-2-logo">
+                        <div class="crop">
+                            <img id="img-1" src="./pictures/frontend.jpeg" />
+                        </div>
+                    </div>
+
+                    <div class="about-details-2-logo-desc flex">
+                        <div class="fw-semibold about-details-2-title">
+                            Web Frontend
+
+                            <a href="https://losangelesgeneralcontractor.com/" target="_blank">
+                                <svg class="arrow-down" viewBox="0 0 24 24" fill="var(--quaternary)" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/>
+                                    <path d="M12 12.586 8.707 9.293l-1.414 1.414L12 15.414l4.707-4.707-1.414-1.414L12 12.586z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="fw-medium about-details-2-text">
+                            25 Projects
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break"></div>
+
+                <div class="about-details-2-item flex">
+                    <div class="about-details-2-logo">
+                        <div class="crop">
+                            <img id="img-2" src="./pictures/backend.png" />
+                        </div>
+                    </div>
+
+                    <div class="about-details-2-logo-desc flex">
+                        <div class="fw-semibold about-details-2-title">
+                            Web Backend
+
+                            <a href="https://losangelesgeneralcontractor.com/" target="_blank">
+                                <svg class="arrow-down" viewBox="0 0 24 24" fill="#ffbb14" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/>
+                                    <path d="M12 12.586 8.707 9.293l-1.414 1.414L12 15.414l4.707-4.707-1.414-1.414L12 12.586z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="fw-medium about-details-2-text">
+                            47 Projects
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break"></div>
+
+                <div class="about-details-2-item flex">
+                    <div class="about-details-2-logo">
+                        <div class="crop">
+                            <img id="img-3" src="./pictures/mobile.jpg" width="auto" height="150px" />
+                        </div>
+                    </div>
+
+                    <div class="about-details-2-logo-desc flex">
+                        <div class="fw-semibold about-details-2-title">
+                            Mobile App
+
+                            <a href="https://losangelesgeneralcontractor.com/" target="_blank">
+                                <svg class="arrow-down" viewBox="0 0 24 24" fill="var(--quaternary)" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2a10 10 0 1 0 10 10A10.011 10.011 0 0 0 12 2zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8z"/>
+                                    <path d="M12 12.586 8.707 9.293l-1.414 1.414L12 15.414l4.707-4.707-1.414-1.414L12 12.586z"/>
+                                </svg>
+                            </a>
+                        </div>
+
+                        <div class="fw-medium about-details-2-text">
+                            32 Projects
+                        </div>
+                    </div>
+                </div>
+
+                <div class="break"></div>
+            </div>
+        </div>
+
+        <div id="contact" class="flex">
+            <div id="contact-1" class="flex">
+                <div class="fw-bold contact-title">
+                    Let's <span class="quaternary">talk.</span>
+                </div>
+
+                <div class="fw-semibold contact-details text-justify">
+                    To request to me commission or want to talk about important details.
+                    Talk to me directly through my services or just fill out the form below.
+                </div>
+
+                <div class="label-container fw-semibold white-grey">
+                    Send To:
+                </div>
+                <div class="textarea-container">
+                    <textarea id="contact-box-1" class="contact-box" rows="1" placeholder="jules@gmail.com" disabled></textarea>
+                </div>
+
+                <br>
+
+                <div class="label-container fw-semibold white-grey">
+                    Message:
+                </div>
+                <div class="textarea-container">
+                    <textarea id="contact-box-2" class="contact-box" rows="1" placeholder="Message..."></textarea>
+                </div>
+
+                <br>
+
+                <div class="fw-semibold button">
+                    Submit
+                </div>
+            </div>
+
+            <div id="contact-2" class="flex">
+                <div class="fw-bold contact-2-title flex">
+                    Services.
+                </div>
+
+                <div class="fw-semibold contact-2-details">
+                    With my services, let's build and create high-quality software.
+                </div>
+
+                <div id="contact-2-show-more" class="flex">
+                    <a href="https://losangelesgeneralcontractor.com/" style="text-decoration: none;" target="_blank">
+                        <div id="contact-2-show-more-text" class="fw-semibold">
+                            show more...
+                        </div>
+                    </a>
+
+                    <a href="https://losangelesgeneralcontractor.com/" style="text-decoration: none;" target="_blank">
+                        <div id="arrow-svg">
+                            <svg id="arrow-right" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd">
+                                <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z" fill="var(--quaternary)" stroke="var(--quaternary)" stroke-width="2"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+
+                <div id="contact-2-logo-container" class="flex">
+                    <a href="https://facebook.com/" target="_blank">
+                        <div class="round-container">
+                            <svg class="contact-2-logo" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <path fill="var(--quaternary)" d="M40,0H10C4.486,0,0,4.486,0,10v30c0,5.514,4.486,10,10,10h30c5.514,0,10-4.486,10-10V10C50,4.486,45.514,0,40,0z M39,17h-3 c-2.145,0-3,0.504-3,2v3h6l-1,6h-5v20h-7V28h-3v-6h3v-3c0-4.677,1.581-8,7-8c2.902,0,6,1,6,1V17z"></path>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/" target="_blank">
+                        <div class="round-container">
+                            <svg class="contact-2-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                                <path fill="var(--quaternary)" d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="https://linkedin.com/" target="_blank">
+                        <div class="round-container">
+                            <svg class="contact-2-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25">
+                                <path fill="var(--quaternary)" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                            </svg>
+                        </div>
+                    </a>
+
+                    <a href="https://stackoverflow.com" target="_blank">
+                        <div class="round-container">
+                            <svg class="contact-2-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                <path fill="var(--quaternary)" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-8.512 8.272l5.532 3.243-.686 1.162-5.533-3.243.687-1.162zm-1.456 3.113l6.185 1.739-.332 1.23-6.204-1.667.351-1.302zm-.672 2.813l6.498.65-.117 1.28-6.504-.586.123-1.344zm-.193 2.469h6.667v1.333h-6.667v-1.333zm8.833 3.333h-11v-7h1v6h9v-6h1v7zm-.852-8.704l-3.56-5.219 1.115-.76 3.559 5.219-1.114.76zm1.356-.841l-1.08-6.224 1.328-.231 1.082 6.224-1.33.231z"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>

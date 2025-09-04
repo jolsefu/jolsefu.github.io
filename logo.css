@@ -1,0 +1,41 @@
+@import './style.css';
+
+#logo-container {
+    background: linear-gradient(var(--primary) 50%, var(--tertiary) 50%);
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#logo-item-container {
+    background-color: var(--quaternary);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    width: 60%;
+}
+
+.logo-item {
+    display: flex;
+    background-color: var(--lightest-color);
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    width: 60%;
+}
+
+.logo-item > a.flex {
+    justify-content: center;
+}
+
+img.logo {
+    height: auto;
+    width: 90%;
+}
+
+.logo-item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px var(--lightest-color);
+}
