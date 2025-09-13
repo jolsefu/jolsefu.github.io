@@ -76,3 +76,96 @@ svg {
     flex-basis: 100%;
     height: 0;
 }
+
+#about-edit-container {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.edit-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, var(--quaternary), #e6a50d);
+    color: #000;
+    border: none;
+    padding: 0.6rem 1rem;
+    border-radius: 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 187, 20, 0.3);
+}
+
+.edit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 187, 20, 0.4);
+    background: linear-gradient(135deg, #ffc107, var(--quaternary));
+}
+
+.edit-btn.save-mode {
+    background: linear-gradient(135deg, #28a745, #20c997);
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+}
+
+.edit-btn.save-mode:hover {
+    background: linear-gradient(135deg, #20c997, #28a745);
+    box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+}
+
+.edit-icon {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+}
+
+.reset-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    background: linear-gradient(135deg, #6c757d, #5a6268);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(108, 117, 125, 0.3);
+}
+
+.reset-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(108, 117, 125, 0.4);
+    background: linear-gradient(135deg, #5a6268, #6c757d);
+}
+
+.reset-icon {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+}
+
+#about-description.editing {
+    background: rgba(255, 187, 20, 0.1);
+    border: 2px dashed var(--quaternary);
+    border-radius: 8px;
+    padding: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+#about-description.editing:focus {
+    border-color: var(--quaternary);
+    box-shadow: 0 0 0 3px rgba(255, 187, 20, 0.2);
+}
+
+#about-description {
+    transition: all 0.3s ease;
+}
