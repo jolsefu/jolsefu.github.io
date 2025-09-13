@@ -89,7 +89,7 @@ svg {
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    background: linear-gradient(135deg, var(--quaternary), #e6a50d);
+    background: linear-gradient(135deg, var(--quaternary));
     color: #000;
     border: none;
     padding: 0.6rem 1rem;
@@ -105,7 +105,7 @@ svg {
 .edit-btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(255, 187, 20, 0.4);
-    background: linear-gradient(135deg, #ffc107, var(--quaternary));
+    background: linear-gradient(135deg, var(--quaternary));
 }
 
 .edit-btn.save-mode {
