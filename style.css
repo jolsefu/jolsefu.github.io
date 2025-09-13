@@ -152,7 +152,7 @@ svg {
 }
 
 #about-description.editing {
-    background: rgba(255, 187, 20, 0.1);
+    background: color-mix(in srgb, var(--quaternary) 20%, black);
     border: 2px dashed var(--quaternary);
     border-radius: 8px;
     padding: 1rem;
