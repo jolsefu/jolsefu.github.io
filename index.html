@@ -3,15 +3,16 @@
 <html lang="en">
     <head>
         <title>Jules' Portfolio</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="navbar.css">
-        <link rel="stylesheet" href="fontstyle.css">
-        <link rel="stylesheet" href="introduction.css">
-        <link rel="stylesheet" href="logo.css">
-        <link rel="stylesheet" href="about.css">
-        <link rel="stylesheet" href="details.css">
-        <link rel="stylesheet" href="contact.css">
-        <link rel="icon" href="pictures/smiley.png" type="image">
+        <link rel="stylesheet" href="public/style.css">
+        <link rel="stylesheet" href="public/navbar.css">
+        <link rel="stylesheet" href="public/fontstyle.css">
+        <link rel="stylesheet" href="public/introduction.css">
+        <link rel="stylesheet" href="public/logo.css">
+        <link rel="stylesheet" href="public/about.css">
+        <link rel="stylesheet" href="public/details.css">
+        <link rel="stylesheet" href="public/contact.css">
+        <link rel="stylesheet" href="public/modal.css">
+        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>😊</text></svg>">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +33,15 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <div class="upload-toggle">
+                    <button id="upload-toggle-btn" aria-label="Upload file">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <polyline points="7,10 12,15 17,10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="12" y1="15" x2="12" y2="3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+                </div>
                 <div class="theme-toggle">
                     <button id="theme-toggle-btn" aria-label="Toggle dark mode">
                         <svg id="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -121,7 +131,7 @@
                     <circle cx="250" cy="250" r="250" fill="#282834" />
                 </svg>
 
-                <img src="./pictures/portrait vectorized.png" width="auto" height="650px" />
+                <img id="my-profile-picture" src="public/pictures/portrait vectorized.png" width="600px" height="650px" />
             </div>
         </div>
 
@@ -129,17 +139,17 @@
             <div id="logo-item-container" class="flex">
                 <div class="logo-item">
                     <a href="https://losangelesgeneralcontractor.com/" class="flex" target="_blank">
-                        <img class="logo" src="./pictures/meta.png" width="auto" height="35px" />
+                        <img class="logo" src="public/pictures/meta.png" width="auto" height="35px" />
                     </a>
                 </div>
                 <div class="logo-item">
                     <a href="https://www.github.com/jolsefu/" class="flex" target="_blank">
-                        <img class="logo" src="./pictures/github.png" width="auto" height="45px" />
+                        <img class="logo" src="public/pictures/github.png" width="auto" height="45px" />
                     </a>
                 </div>
                 <div class="logo-item">
                     <a href="https://losangelesgeneralcontractor.com/" class="flex" target="_blank">
-                        <img class="logo" src="./pictures/linkedin.png" width="auto" height="45px" />
+                        <img class="logo" src="public/pictures/linkedin.png" width="auto" height="45px" />
                     </a>
                 </div>
             </div>
@@ -300,7 +310,7 @@
                 <div class="about-details-2-item flex">
                     <div class="about-details-2-logo">
                         <div class="crop">
-                            <img id="img-1" src="./pictures/frontend.jpeg" />
+                            <img id="img-1" src="public/pictures/frontend.jpeg" />
                         </div>
                     </div>
 
@@ -327,7 +337,7 @@
                 <div class="about-details-2-item flex">
                     <div class="about-details-2-logo">
                         <div class="crop">
-                            <img id="img-2" src="./pictures/backend.png" />
+                            <img id="img-2" src="public/pictures/backend.png" />
                         </div>
                     </div>
 
@@ -354,7 +364,7 @@
                 <div class="about-details-2-item flex">
                     <div class="about-details-2-logo">
                         <div class="crop">
-                            <img id="img-3" src="./pictures/mobile.jpg" width="auto" height="150px" />
+                            <img id="img-3" src="public/pictures/mobile.jpg" width="auto" height="150px" />
                         </div>
                     </div>
 
@@ -471,6 +481,48 @@
                             </svg>
                         </div>
                     </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Upload Modal -->
+        <div id="upload-modal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="fw-bold">Upload File</h3>
+                    <button class="modal-close" id="modal-close-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="upload-form" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="file-input" class="fw-semibold">Choose File:</label>
+                            <div class="file-input-container">
+                                <input type="file" id="file-input" name="file" accept="image/*,application/pdf,.doc,.docx,.txt" required>
+                                <div class="file-input-display">
+                                    <svg class="file-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14,2H6A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2M18,20H6V4H13V9H18V20Z" fill="currentColor"/>
+                                    </svg>
+                                    <span class="file-text">Click to select file or drag and drop</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-actions">
+                            <button type="button" class="btn btn-secondary" id="cancel-upload-btn">Cancel</button>
+                            <button type="submit" class="btn btn-primary" id="upload-btn">Upload File</button>
+                        </div>
+                    </form>
+                    <div id="upload-progress" class="upload-progress" style="display: none;">
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">Uploading...</span>
+                    </div>
+                    <div id="upload-result" class="upload-result" style="display: none;"></divabout-description
                 </div>
             </div>
         </div>

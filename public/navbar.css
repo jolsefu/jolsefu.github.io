@@ -1,0 +1,142 @@
+@import './style.css';
+
+nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    padding: 10px;
+    background: var(--primary);
+    z-index: 10;
+    border-bottom: 1px black solid;
+}
+
+nav .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    max-width: 90%;
+    background: var(--primary);
+    margin: auto;
+}
+
+nav .navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar > div.logo > a {
+    color: var(--quaternary);
+    font-size: 27px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.navbar > div.logo >  a:hover {
+    text-shadow: 1px 1px 4px var(--quaternary);
+}
+
+nav .navbar .menu {
+    display: flex;
+}
+
+.navbar .menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.navbar .menu li a {
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .menu li a:hover {
+    text-shadow: 1px 1px 5px var(--text-color);
+}
+
+#Home {
+    background: #fff;
+}
+
+#About {
+    background: #f2f2f2;
+}
+
+#Category {
+    background: #e6e6e6;
+}
+
+#Latest {
+    background: #fff;
+}
+
+#Contact {
+    background: #f2f2f2;
+}
+
+#Feedback {
+    background: #e6e6e6;
+}
+
+/*
+SVG STYLING
+*/
+
+#hamburger-button {
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#hamburger-button > svg > rect {
+    fill: var(--text-color);
+}
+
+#verified {
+    fill: var(--quaternary);
+    margin: 3px;
+    transition: all 0.2s ease-in-out;
+}
+
+#verified:hover {
+    filter: drop-shadow(1px 1px 5px var(--quaternary));
+    cursor: pointer;
+}
+
+nav .navbar .dropdown {
+    display: none;
+}
+
+/*
+Theme toggle button styles
+*/
+
+.theme-toggle {
+    margin-left: 20px;
+}
+
+#theme-toggle-btn {
+    background: none;
+    border: 2px solid var(--quaternary);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    color: var(--quaternary);
+}
+
+#theme-toggle-btn:hover {
+    background: var(--quaternary);
+    color: var(--primary);
+    box-shadow: 0 0 10px var(--quaternary);
+}
